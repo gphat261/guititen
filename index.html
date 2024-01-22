@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông Điệp Giao Hàng</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    #heart-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 50px auto;
+    }
+
+    #heart {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background-image: url('https://your-heart-image-url.png'); /* Thay đổi URL hình ảnh trái tim của bạn */
+      background-size: cover;
+      animation: heartBeat 1s infinite;
+    }
+
+    @keyframes heartBeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="heart-container">
+    <div id="heart"></div>
+  </div>
+  
+  <div id="message">
+    <p>Đơn hàng đang trên đường giao tới quý khách. Đơn hàng bao gồm: tình cảm chân thành và sự yêu thương vô điều kiện.</p>
+    <p>Phí giao hàng: một đoạn thanh xuân của cậu :3</p>
+  </div>
+</body>
+</html>
